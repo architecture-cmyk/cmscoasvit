@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+
+# Environment (never commit real keys)
+.env
+.env.local
+.env.*.local
+
+# Build output
+dist/
+build/
+.svelte-kit/
+*.tsbuildinfo
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Coverage
+coverage/
+
+# Supabase local
+supabase/.temp/
+supabase/.branches/
