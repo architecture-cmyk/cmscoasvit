@@ -48,6 +48,7 @@
         { href: '/app/timing', label: 'Working Days & Slots', roles: ['admin'] },
         { href: '/app/lesson-plans', label: 'Lesson Plans', roles: ['admin'] },
         { href: '/app/attendance', label: 'Attendance', roles: ['admin'] },
+        { href: '/app/leave', label: 'Leave & Proxy', roles: ['admin'] },
         { href: '/app/reports', label: 'Reports', roles: ['admin'] },
         { href: '/app/users', label: 'Users', roles: ['admin'] }
       );
@@ -57,6 +58,7 @@
         { href: '/app/timetables', label: 'Timetables', roles: ['hod'] },
         { href: '/app/lesson-plans', label: 'Lesson Plans', roles: ['hod'] },
         { href: '/app/attendance', label: 'Attendance', roles: ['hod'] },
+        { href: '/app/leave', label: 'Leave & Proxy', roles: ['hod'] },
         { href: '/app/reports', label: 'Reports', roles: ['hod'] }
       );
     }
@@ -64,7 +66,8 @@
       items.push(
         { href: '/app/my-timetable', label: 'My Timetable', roles: ['faculty'] },
         { href: '/app/lesson-plans', label: 'My Lesson Plans', roles: ['faculty'] },
-        { href: '/app/attendance', label: 'My Attendance', roles: ['faculty'] }
+        { href: '/app/attendance', label: 'My Attendance', roles: ['faculty'] },
+        { href: '/app/leave', label: 'Leave & Proxy', roles: ['faculty'] }
       );
     }
     nav = items.filter((i) => i.roles.includes(u.role));
